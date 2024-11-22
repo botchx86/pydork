@@ -7,7 +7,7 @@ import json
 
 DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
 
-ASCII_ART = """
+ASCII_ART = r"""
     ____        ____             __  
    / __ \__  __/ __ \____  _____/ /__
   / /_/ / / / / / / / __ \/ ___/ //_/
