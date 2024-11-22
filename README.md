@@ -1,11 +1,12 @@
 # pydork
+```
     ____        ____             __  
    / __ \__  __/ __ \____  _____/ /__
   / /_/ / / / / / / / __ \/ ___/ //_/
  / ____/ /_/ / /_/ / /_/ / /  / ,<   
 /_/    \__, /_____/\____/_/  /_/|_|  
       /____/                         
-
+```
 ## PyDork: Python Google Dorking Command-Line Tool
 
 usage: pydork [-h] [-f FILE] [-n NUM] [-o OUTPUT] [--json-output JSON_OUTPUT] [--delay DELAY] [-d DOMAIN_FILTER] [--proxy PROXY]
