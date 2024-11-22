@@ -8,7 +8,7 @@
       /____/                         
 ```
 ## PyDork: Python Google Dorking Command-Line Tool
-
+```
 usage: pydork [-h] [-f FILE] [-n NUM] [-o OUTPUT] [--json-output JSON_OUTPUT] [--delay DELAY] [-d DOMAIN_FILTER] [--proxy PROXY]
               [--fetch-titles]
               [dork]
@@ -29,7 +29,8 @@ options:
                         Filter results to include only URLs containing a specific domain
   --proxy PROXY         Route queries through a proxy (e.g., http://127.0.0.1:8080)
   --fetch-titles        Fetch and display page titles with results
-
-Example usage:
+```
+## Example usage:
+```
   python pydork.py 'site:example.com inurl:login' -n 5
-
+```
