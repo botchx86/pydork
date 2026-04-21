@@ -19,7 +19,6 @@
 
 ## Table of Contents
 
-- [Features](#features)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
 - [Usage](#usage)
@@ -33,57 +32,6 @@
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 - [License](#license)
-
-## Features
-
-### Core Functionality
-- **Google Dork Searches** - Execute complex Google search queries from the command line
-- **Batch Processing** - Search multiple queries from a file
-- **Domain Filtering** - Filter results by specific domain names
-- **Title Fetching** - Automatically retrieve page titles for results
-- **Status Code Checking** - Verify URL accessibility with HTTP status codes
-
-### Advanced Filtering
-- **Keyword Exclusion** (`--exclude`) - Skip URLs containing specific keywords
-- **Keyword Inclusion** (`--include`) - Only keep URLs containing specific keywords
-- **Regex Filtering** (`--regex`) - Filter results using regular expressions
-- **URL Length Constraints** (`--min-length`, `--max-length`) - Filter by URL length
-- **Deduplication** (`--dedup`) - Remove duplicate URLs automatically
-
-### Export Formats
-- **Text** - Simple newline-separated list
-- **CSV** - Spreadsheet-compatible format with metadata
-- **JSON** - Structured data with comprehensive metadata
-- **Markdown** - Formatted with clickable links
-- **HTML** - Professional styled reports with tables and indicators
-
-### Smart Features
-- **Rate Limit Handling** - Automatic retry with exponential backoff on 429 errors
-- **SQLite Logging** (`--db-log`) - Persistent database logging of all searches
-- **Configuration Files** (`-c`) - Load default settings from config files
-- **Customizable Delays** - Control request timing to avoid detection
-
-### NEW: Risk Scoring (v1.1) - Enterprise Feature
-- **Risk Score Calculation** (`--risk-score`) - Intelligent pattern-based scoring (1-10)
-- **Severity Classification**:
-  - CRITICAL (9) - Admin panels, exposed credentials, database files, configs
-  - HIGH (7) - Database endpoints, APIs, upload functionality
-  - MEDIUM (5) - Login/auth endpoints, test/debug areas
-  - LOW (2) - Static assets and public resources
-- **Pattern-Based Detection** - Identifies 40+ risk indicators
-- **Risk-Sorted Results** - Automatically prioritizes high-risk findings
-- **Risk Indicators in Exports** - CSV and JSON include severity and pattern matches
-
-### NEW: Change Detection (v1.2) - Continuous Monitoring
-- **Baseline Management** (`--baseline`) - Save current results as reference
-- **Comparison Analysis** (`--compare`) - Detect changes against baseline
-- **Delta Reporting** (`--save-diff`) - Export changes to JSON
-- **Change Tracking**:
-  - NEW URLs (security risk indicators)
-  - REMOVED URLs (infrastructure changes)
-  - UNCHANGED URLs (consistency verification)
-- **Summary Statistics** - Quantified change metrics
-- **Perfect for Monitoring** - Track infrastructure changes over time
 
 ## Installation
 
@@ -515,35 +463,6 @@ Summary Statistics
 - **requests** - HTTP client for status checks and metadata
 
 All included in `requirements.txt`
-
-## Version History
-
-### v1.0.0 (2025-12-03) - Enterprise Edition
-- **Risk Scoring** (v1.1) - Intelligent pattern-based risk analysis with 4-level severity
-- **Change Detection** (v1.2) - Continuous monitoring with baseline comparison
-- 40+ risk indicator patterns for security analysis
-- Risk-sorted results prioritizing critical findings
-- Baseline/comparison workflow for infrastructure tracking
-- Enhanced CSV/JSON exports with risk metadata
-- RiskScorer and ChangeDetector classes
-
-### v1.0.0 (2025-12-03)
-- Major feature expansion with 14 new capabilities
-- Added multiple export formats (CSV, JSON, Markdown, HTML)
-- Implemented smart rate limiting with exponential backoff
-- Added SQLite database logging
-- Enhanced filtering system (keyword, regex, URL length)
-
-### v0.9.1 (2025-12-03)
-- Bug fixes and code quality improvements
-- PEP 8 compliance, index numbering fixes
-- Improved exception handling
-
-### v0.9 (2025-12-03)
-- Version flag support
-- Core functionality finalized
-
-See [CHANGELOG.md](CHANGELOG.md) for full details.
 
 ## Security Considerations
 
